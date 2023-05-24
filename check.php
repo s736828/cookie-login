@@ -7,7 +7,7 @@ $pw = '1234';
 if ($_POST['acc'] == $acc && $_POST['pw'] == $pw) {
     // echo "登入成功";
     $_SESSION['login'] = $acc;
-
+    // isset已設置，unset取消設置
     if (isset($_SESSION['error'])) {
         unset($_SESSION['error']);
     }
